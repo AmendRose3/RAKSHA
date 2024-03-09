@@ -1,9 +1,14 @@
+
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #2a00b7;
+    background-color: #2a4a8a;
   }
   input{
     background-color: #ccc;
@@ -25,7 +30,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #2a00b7;
+    color: #2a4a8a;
   }
   
   .signup-form {
@@ -66,7 +71,7 @@
   button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #2a00b7;
+    background-color: #2a4a8a;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -75,15 +80,15 @@
   }
   
   button[type="submit"]:hover {
-    background-color: #42006c;
+    background-color: #050a66;
   }
   
 
 .emergency-btn,
 .appointment-btn {
   background-color: white; 
-  color: blue;
-  border: 2px solid purple; 
+  color: #2a4a8a;
+  border: 2px solid #050a66; 
   padding: 10px 20px; 
   font-size: 16px; 
   cursor: pointer;
@@ -93,7 +98,7 @@
 
 .emergency-btn:hover,
 .appointment-btn:hover {
-  background-color: blue; 
+  background-color: #2a4a8a; 
   color: white;
 }
 

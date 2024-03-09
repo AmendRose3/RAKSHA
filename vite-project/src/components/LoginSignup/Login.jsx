@@ -43,7 +43,7 @@ const Login = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2024 Raksha. All rights reserved.</p>
+        <p>&copy; 2024 RUSHHOURS. All rights reserved.</p>
       </footer>
     </div>
   );
