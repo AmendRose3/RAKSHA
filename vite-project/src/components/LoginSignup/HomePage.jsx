@@ -7,13 +7,15 @@ const HomePage = () => {
       {/* Header */}
       <header className="header">
         <h1>Raksha</h1>
+        <h4>Lets Save Lives!</h4>
       </header>
       
       {/* Main Content */}
       <div className='content'>
         <div className='text'>What would you like to do?</div>
         <div className='buttons'>
-          <button className='emergency-btn'>Emergency Call</button>
+          <button className='emergency-btn'>Emergency Call</button><br></br>
+          <br></br>
           <button className='appointment-btn'>Make an Appointment</button>
         </div>
       </div>

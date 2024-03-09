@@ -9,9 +9,9 @@ const LoginSignup = () => {
   const navigate = useNavigate(); // Hook to navigate 
 
   const handleSignUp = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
    
-    navigate('/login'); // Redirect to login page after sign up
+    navigate('/login'); // Redirect to login page when sign up function is pressed
   };
 
   return (
@@ -19,12 +19,13 @@ const LoginSignup = () => {
       {/* Header */}
       <header className="header">
         <h1>Raksha</h1>
+        <h4>Lets Save Lives!</h4>
       </header>
       
       {/* Signup Form */}
       <div className='signup-form'>
         <div className='text'>SIGN UP</div>
-        <form onSubmit={handleSignUp}> {/* Call handleSignUp function on form submission */}
+        <form onSubmit={handleSignUp}> {/* Call handleSignUp function on form submission defined aboveee */}
           <div className='form-group'>
             <label htmlFor='username'>Aadhar Number:</label>
             <input type='text' id='username' name='username' placeholder='Enter your Aadhar Number' />

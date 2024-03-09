@@ -18,6 +18,7 @@ const Login = () => {
       {/* Header */}
       <header className="header">
         <h1>Raksha</h1>
+        <h4>Lets Save Lives!</h4>
       </header>
       
       {/* Login Form */}
@@ -36,6 +37,7 @@ const Login = () => {
           </div>
           
           <button type='submit'>Login</button>
+          
         </form>
       </div>
 

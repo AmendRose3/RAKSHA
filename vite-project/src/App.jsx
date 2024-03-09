@@ -13,7 +13,7 @@ function App() {
           <Route index element={<LoginSignup />} />
           <Route path="/signup" element={<LoginSignup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/HomePage" element={<HomePage />} />
           {/* <Route path="*" element={<Default />} /> Define default route */}
         </Routes>
       </BrowserRouter>
