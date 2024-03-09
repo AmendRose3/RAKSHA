@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom'; 
 import './LoginSignup.css';
-import userIcon from "../assets/person.png";
 import emailIcon from "../assets/email.png";
 import passwordIcon from "../assets/password.png";
 
-const LoginSignup = () => {
-  const navigate = useNavigate(); // Hook to navigate 
+const Login = () => {
+    const navigate = useNavigate(); 
 
-  const handleSignUp = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
-   
-    navigate('/login'); // Redirect to login page after sign up
+  const handleLogin = (event) => {
+    event.preventDefault();
+  
+    navigate('/HomePage');
   };
 
   return (
@@ -21,15 +20,10 @@ const LoginSignup = () => {
         <h1>Raksha</h1>
       </header>
       
-      {/* Signup Form */}
+      {/* Login Form */}
       <div className='signup-form'>
-        <div className='text'>SIGN UP</div>
-        <form onSubmit={handleSignUp}> {/* Call handleSignUp function on form submission */}
-          <div className='form-group'>
-            <label htmlFor='username'>Aadhar Number:</label>
-            <input type='text' id='username' name='username' placeholder='Enter your Aadhar Number' />
-            <img src={userIcon} alt='User Icon' />
-          </div>
+        <div className='text'>LOGIN</div>
+        <form onSubmit={handleLogin}>
           <div className='form-group'>
             <label htmlFor='email'>Email:</label>
             <input type='email' id='email' name='email' placeholder='Enter your email' />
@@ -41,7 +35,7 @@ const LoginSignup = () => {
             <img src={passwordIcon} alt='Password Icon' />
           </div>
           
-          <button type='submit'>Sign Up</button>
+          <button type='submit'>Login</button>
         </form>
       </div>
 
@@ -53,4 +47,4 @@ const LoginSignup = () => {
   );
 };
 
-export default LoginSignup;
+export default Login;

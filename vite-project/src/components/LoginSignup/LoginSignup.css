@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2a00b7;
+  }
+  input{
+    background-color: #ccc;
+  }
+  
+  h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header,
+  .footer {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2a00b7;
+  }
+  
+  .signup-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="aadhar"] {
+    width: calc(100% - 24px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  img {
+    width: 20px;
+    height: 20px;
+    margin-left: -24px;
+    margin-bottom: -5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a00b7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #42006c;
+  }
+  

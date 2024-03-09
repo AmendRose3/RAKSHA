@@ -1,15 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import LoginSignup from './components/LoginSignup/LoginSignup'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
+import './App.css';
+import LoginSignup from './components/LoginSignup/LoginSignup';
+import Login from './components/LoginSignup/Login';
+import HomePage from './components/LoginSignup/HomePage';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='container'>
-      <LoginSignup/>
+      <BrowserRouter>
+        <Routes> 
+          <Route index element={<LoginSignup />} />
+          <Route path="/signup" element={<LoginSignup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<HomePage />} />
+          {/* <Route path="*" element={<Default />} /> Define default route */}
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
